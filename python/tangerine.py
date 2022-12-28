@@ -13,7 +13,8 @@ def solution(k, tangerine):
     s_cnt = 1
     cmp = tangerine[0]
 
-    for i in range(1,len(sorted(tangerine))) : # 크기별 귤의 갯수를 count하는 과정
+    # 크기별 귤의 갯수를 count하는 과정
+    for i in range(1,len(sorted(tangerine))) : 
         if(cmp == tangerine[i]):
             s_cnt += 1
         else:
@@ -23,24 +24,18 @@ def solution(k, tangerine):
             
     numType.append(s_cnt)
 
-    numType.sort(reverse=True)
 
+    numType.sort(reverse=True)
     sum = 0
     
+    # 분류한 귤 크기로 최소 가지수로 귤 갯수 채우기
     for i in numType:
         sum += i
         if(sum >= k):
             answer = i+1
             break
+
     return answer
 
 
 print(solution(3,[1,3,2,1]))
-
-"""
-def sorted(
-    __iterable: Iterable[SupportsRichComparisonT], *, key: None = ..., reverse: bool = ...
-) -> list[SupportsRichComparisonT]: ...
-__iterable = 네임 맹글링
-
-"""

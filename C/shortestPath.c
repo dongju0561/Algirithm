@@ -34,7 +34,7 @@ void BFS(int _x, int _y)
 			enqueue(x[pos], y[pos]-1, l[pos] + 1);
 		
 		if (y[pos] < Col - 1 && map[x[pos]][y[pos] + 1] == 1)
-			enqueue(x[pos], y[pos]+1, l[pos] + 1);6 8
+			enqueue(x[pos], y[pos]+1, l[pos] + 1);
 		pos++;
 	}
 

@@ -13,6 +13,8 @@ print(stringTest)
 
 strNum = ['01','20','03']
 strNum2 = ['1','20','3']
+strNum2.sort()
+print(strNum)
 strNum2 = list(map(lambda x: x*3, strNum2))
 print(strNum2)
 strNum2.append('1')

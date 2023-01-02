@@ -1,3 +1,7 @@
+"""
+    
+"""
+
 def solution(array, commands):
     answer = []
     for command in commands:

@@ -23,7 +23,12 @@ print(tupleCase)
 # map()연습
 from collections import Counter
 inputList = [12,3,1]
-resultList = list(map(lambda x:x%2, inputList))
+resultList = list(map(lambda x:x%2, inputList))# caculate something
 resultList = dict(Counter(resultList))
 print(resultList.get(1))
 
+inputString = ["hello ","bye ","nice to meet "]
+cgString = list(map(lambda x:x+"dongju", inputString))# add another string
+print(cgString)
+cgString = list(map(lambda x:x[2:4], inputString))# slicing
+print(cgString)

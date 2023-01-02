@@ -1,1 +1,1 @@
-cntNum
+print(2^2)

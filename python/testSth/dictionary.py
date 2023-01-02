@@ -7,5 +7,4 @@ cnt = collections.Counter(list)
 print(cnt)
 
 for i in sorted(cnt.values(),reverse=True):
-    
     print(i)

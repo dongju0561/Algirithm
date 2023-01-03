@@ -1,4 +1,16 @@
 #1/2
+
+def solution(k, d):
+    answer, d_square = 0, d ** 2
+
+    for i in range(0, d+1, k):
+        answer += int((d_square - i ** 2) ** 0.5) // k + 1
+
+    return answer
+
+print(solution(2,4))
+
+"""
 # y = x기준으로 똑같다는 특징을 이용 한쪽 부분만 비교.. 이것 또한 시간 복잡도...
 from itertools import combinations_with_replacement as cwr
 
@@ -29,8 +41,8 @@ def solution(k, d):
                 answer += 2
     
     return answer
+    """
 
-print(solution(2,4))
 
 """
 전체 경우의 수를 비교 시간 복잡도 인해 실패...

@@ -1,4 +1,4 @@
-# import collections
+import collections
 
 # list = [1,3,2,2,1,4]
 
@@ -9,6 +9,3 @@
 # print(type(cnt.get(1)))
 # for i in sorted(cnt.values(),reverse=True):
 #     print(i)
-
-dic = {'pop':3100,'push':300,'tro':2900}
-print(sorted(dic.items(),key=lambda x:x[1]))

@@ -13,8 +13,7 @@ def solution(N, stages):
     stages = dict(Counter(stages))
     for stage in range(1,N):
         Fdic[stage] = perFault(stages,stage,N)
-    print(sorted(Fdic))
-    #print(sorted(Fdic,key=lambda x:x[1]))
+    #딕셔너리 값을 기준으로 키값 정렬
     answer = []
     return answer
 
